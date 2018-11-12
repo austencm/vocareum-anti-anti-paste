@@ -7,6 +7,7 @@
     "message":"It does localization too! (this whole tab is, actually)"
     ,"description":"Header text for the localization section"
   }
+  ,"l10nIntro": {
     "message":"'L10n' refers to 'Localization' - 'L' an 'n' are obvious, and 10 comes from the number of letters between those two.  It is the process/whatever of displaying something in the language of choice.  It uses 'I18n', 'Internationalization', which refers to the tools / framework supporting L10n.  I.e., something is internationalized if it has I18n support, and can be localized.  Something is localized for you if it is in your language / dialect."
     ,"description":"introduce the basic idea."
   }

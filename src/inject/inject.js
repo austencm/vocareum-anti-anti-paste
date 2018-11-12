@@ -1,14 +1,14 @@
 chrome.extension.sendMessage({}, function(response) {
 	var readyStateCheckInterval = setInterval(function() {
-	if (document.readyState === "complete") {
-		clearInterval(readyStateCheckInterval);
+		if (document.readyState === "complete") {
+			clearInterval(readyStateCheckInterval);
 
-		// ----------------------------------------------------------
-		// This part of the script triggers when page is done loading
-		console.log("Hello. This message was sent from scripts/inject.js");
-		// ----------------------------------------------------------
-
-		console.dir(editor);
-	}
+			document
+				.querySelector('#codearea0')
+				.parentElement
+				.addEventListener('paste', function (event) {
+					event.stopPropagation();
+				}, true);
+		}
 	}, 10);
 });
